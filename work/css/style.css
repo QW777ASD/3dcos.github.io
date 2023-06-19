@@ -1,0 +1,430 @@
+/**************** reset ****************/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.4s all linear;
+}
+ 
+/**************** container ****************/
+.container {
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 300;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background: rgb(136, 211, 30);
+    box-shadow: 10px 1rem 1rem rgba(184, 121, 121, 0.1);
+    opacity: 1;
+}
+
+.container .first {
+    color: #ffffff;
+}
+
+.container p {
+    color: #ffffff;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.img1 {
+    width: 62px;
+    height: auto;
+    margin: 1% 2%;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.sidebar-top2 nav {
+    margin-left: 10px;
+}
+
+.sidebar-top2 a {
+    color: #ffffff;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    padding-left: 10px;
+    align-content: center;
+    margin-right: 15px;
+}
+
+.sidebar-top2 a:hover {
+    font-size: 28px;
+    font-weight: 900;
+    color: #00bbff;
+    margin-left: 10px;
+    transform: 1s;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 18px 20px 18px 20px;
+}
+
+#menu-bar {
+    font-size: 26px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.66);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 8px;
+    display: none;
+}
+
+.login {
+    /* padding: 10px; */
+    text-align: left;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+
+.login a {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+.login i {
+    font-size: 36px;
+    margin: 20px auto;
+    height: auto;
+    color: #ffffff;
+}
+
+/**************** section ****************/
+section {
+    padding: 10px;
+}
+
+/**************** home ****************/
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-height: 500px;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    background: url(../img/pexels-photomix-company-518245.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    width: 100%;
+    margin-top: 60px;
+    padding: 30px;
+    flex: 1 100px;
+    background: rgb(36, 31, 0);
+    background: linear-gradient(90deg, rgba(36, 31, 0, 0.8156512605042017) 4%, rgba(94, 132, 1, 1) 48%, rgba(0, 255, 235, 0.33665966386554624) 100%);
+    box-sizing: border-box;
+}
+
+.content h3 {
+    font-size: 53px;
+    color: rgb(136, 211, 30);
+}
+
+.content p {
+    font-size: 25px;
+    color: (255, 255, 255, 0.9);
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.bb {
+    padding: 16px;
+    border: 4px solid rgb(255, 255, 255);
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.bb:hover {
+    background-color: rgb(137, 91, 58);
+    color: #ffffff;
+    box-shadow: inset 200px 0 0 0 rgba(23, 184, 224, 0.378);
+    transition: 1.5s all;
+}
+
+.img2 {
+    width: 100%;
+    margin-top: 60px;
+    padding: 50px 0;
+    flex: 0.5;
+    animation: moving 3s linear infinite;
+    background-size: cover;
+    background-position: left;
+}
+
+@keyframes moving {
+    0%{transform: translateX(0rem);}
+    50%{transform: translateX(0.7rem);}
+    100%{transform: translateX(0rem);}
+}
+
+/**************** heading ****************/
+.heading {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(11, 94, 248);
+    padding: 30px;
+}
+
+.heading span {
+    font-size: 30px;
+    color: rgb(248, 149, 11);
+}
+
+/**************** menu ****************/
+.menu .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.menu .box-container .box {
+    flex: 1 1 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgb(162, 182, 219);
+    border: 1px solid rgb(200, 163, 137);
+    background: url(../img/—Pngtree—watercolor\ gradient\ green\ ppt\ background_931936.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 20px;;
+    padding-bottom: 30px;
+    height: 500px;
+}
+
+.img3 {
+    height: 320px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
+    z-index: 1;
+    background-size: cover;    
+}
+
+.img4 {
+    height: 320px;
+    padding: 0px 0px 0px 40px;
+    object-fit: cover;
+    width: 90%;
+    border-radius: 20px;
+    z-index: 1;
+    background-size: cover;
+}
+
+.img5 {
+    height: 320px;
+    padding: 30px 0px 0px 40px;
+    object-fit: cover;
+    width: 85%;
+    border-radius: 20px;
+    z-index: 1;    
+}
+
+.menu .box-container .box .price{
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    background: #00bbff;
+    padding: 10px 55px 10px 55px;
+    opacity: 0.8;
+    position: absolute;
+}
+
+.menu .box-container .box h3{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding: 10px 40px 10px 40px;
+    text-align: center;
+    background: rgb(215,214,226);
+    background: linear-gradient(90deg, rgba(215,214,226,0) 0%, rgba(205,208,71,0.7204131652661064) 50%, rgba(215,214,226,0) 100%);
+}
+
+.menu .box-container .box .bb2{
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 25px;
+    color: rgba(88, 10, 10, 0.789);
+    /* 置中 */
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid chocolate;
+}
+
+.menu .box-container .box .bb2:hover{
+    background-color: rgb(255, 174, 0);
+    color: #ffffff;
+    box-shadow: inset 400px 0 0 0 rgb(255, 174, 0);
+    transition: 1s all;
+}
+
+.menu .box-container .box .icons{
+    display: flex;
+    flex-flow: column;
+    color: rgb(248, 11, 232);
+    position: relative;
+    top: -90%;
+    left: -1300%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    z-index: 1;
+}
+
+.menu .box-container .box:hover .icons{
+    left: 137%;
+    opacity: 1;
+}
+
+.menu .box-container .box .icons a{
+    padding: 10px;
+    width: 45px;
+    line-height: 10px;
+    font-size: 20px;
+    border: 2px solid chocolate;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: rgb(117, 17, 224);
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+.menu .box-container .box .icons a:hover{
+    background-color: #eaf42e;
+    opacity: 1;
+}
+/**************** footer ****************/
+.footer {
+    margin-top: 15px;
+    background: rgb(230, 230, 230);
+    text-align: center;
+}
+
+.socail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer .credit {
+    padding: 10px;
+    color: #000;
+    font-weight: normal;
+}
+
+.footer .credit span {
+    color: rgb(38, 204, 204);
+}
+
+/**************** up ****************/
+/* #up {
+    position: fixed;
+    top: -120%; right: 20px;
+    padding: 10px;
+    font-size: 25px;
+    background: rgb(236, 7, 7);
+    color: #ffffff;
+    border-radius: 10px;
+    opacity: 0.8;
+    transform: translateY(3rem);
+}
+
+#up.active {
+    top: 80%;
+} */
+
+/**************** nav ****************/
+/*nav {
+    grid-area: nv;
+    display: inline-block;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+    grid-template-rows: 0.3fr;
+
+    text-align: center;
+    align-items: center;
+}
+
+/**************** RWD 手機板 ****************/
+
+
+@media (max-width: 600px) {
+
+/**************** container ****************/
+    #menu-bar {
+        display: initial;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    }
+
+    .sidebar-top2 {
+        position: absolute;
+        top: 80px; left: 0; right: 0;
+        background-color: rgb(11, 94, 248);
+        border-top: 3px solid gray;
+        /* 隱藏下拉選單 */
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .sidebar-top2 a {
+        /* 疊起來 */
+        margin: 10px;
+        padding: 6px;
+        display: block;
+        font-size: 22px;
+        font-weight: normal;
+        color: rgb(95, 62, 213);
+        border-top: 0px solid gray;
+        background-color: #ffffff;
+    }
+
+    .sidebar-top2.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        padding: 10px;
+    }
+
+/**************** home ****************/
+    .home .content {
+        text-align: center;
+        margin-top: 70px;
+        padding-top: -80px;   
+    }
+
+    .home .img2 {
+        width: 200px;
+        margin: -50px;
+        margin-left: 50px;
+    }
+
+    .bb {
+        width: 100%;
+        z-index: 4;
+    }
+
+/**************** menu ****************/
+    .menu .box-container .box {
+        flex: 1 1 auto;
+    }
+}
